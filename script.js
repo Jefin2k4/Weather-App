@@ -3,7 +3,6 @@
 
 let API_KEY = "2eb73a8adb9ba21a07876cb56e6db7f0";
 
-// Function to fetch weather data from the API
 const getWeatherData = (city) => {
     const URL = "https://api.openweathermap.org/data/2.5/weather";
     const Full_url = `${URL}?q=${city}&appid=${API_KEY}&units=metric`;
@@ -16,7 +15,6 @@ const getWeatherData = (city) => {
         });
 };
 
-// Function to handle the search button click
 function searchCity() {
     const city = document.getElementById("city-input").value;
     if (!city) {
@@ -34,7 +32,6 @@ function searchCity() {
         });
 }
 
-// Function to display weather data on the page
 const showWeatherData = (WeatherData) => {
     document.getElementById("weather-type").innerText = WeatherData.weather[0].main;
     document.getElementById("temp").innerText = WeatherData.main.temp;
