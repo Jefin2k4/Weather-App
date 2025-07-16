@@ -1,23 +1,29 @@
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" charset="UTF-8"></script>
-        <img class="logo" src="https://raw.githubusercontent.com/Jefin2k4/Weather-App/main/weather-ios-logo-png-transparent.png" alt="Weather Logo">">
-        <title>Weather App</title>
-        </head>
-        <body>
-            <div class="container">
-            <h1 class="heading">Weather App</h1>
-            <input type="text" name="" placeholder="Enter city name"  id="city-input">
-            <input class="but" type="button" onclick="searchCity()" value="Search">
-            <div class="result">
-                <h2 id="weather-type">-------------</h2>
-                <div>
-                    <h3>Temp: <span id="temp"></span><span> °C</span></h3>
-                    <h3>Min Temp: <span id="min-temp"></span> °C</h3>
-                    <h3>Max Temp: <span id="max-temp"></span> °C</h3>
-            </br>
-        </div>
-        </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://raw.githubusercontent.com/Jefin2k4/Weather-App/main/weather-ios-logo-png-transparent.png" alt="Weather Logo">
+    <h1 class="heading">Weather App</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Enter city name" id="city-input">
+      <input class="but" type="button" onclick="searchCity()" value="Search">
+    </div>
+    <div class="result">
+      <h2 id="weather-type">-------------</h2>
+      <div class="weather-info">
+        <h3>Temp: <span id="temp"></span> °C</h3>
+        <h3>Min Temp: <span id="min-temp"></span> °C</h3>
+        <h3>Max Temp: <span id="max-temp"></span> °C</h3>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
