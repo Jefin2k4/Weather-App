@@ -1,74 +1,106 @@
-*{
-    margin:0;
-    box-sizing: border-box;
-    font-family: Poppins,sans-serif;
-    
-}
-.container{
-    background-color: cornflowerblue;
-    padding:50px;
-    border-radius:10px;
-    margin :10px 550px;
-}
-.heading{
-color: white;
-padding:10px;
-position: relative;
-left:50px;
-}
-.logo{
-width:300px;
-height:300px;
-position: relative;
-left: 615px;
-}
-input[type="text"]{
-    margin-top: 8px;
-    height: 3rem;
-    width: 280px;
-    border-radius: 8px;
-    border:2px  white;
-    outline: none;
-    padding:10px;
-    font-size:16px;
-    margin-bottom:20px;
-}
-input:focus{
-    background-color:white;
-    color:#495057;
-    border-color:#80bdff;
-    outline:0;
-    box-shadow: 0 0 0 .2rem rgb(red, green, blue);
-
-}
-input[type="button"]{
-    background-color:black ;
-    color: white;
-    height: 3.2rem;
-    width: 200px;
-    font-size:1.1rem;
-    outline: none;
-    border-radius: 8px;
-    font-weight: 600px;
-    border:none;
-    cursor: pointer;
-    position:relative;
-    left:50px;
-     }
-input[type="button"]:hover{
-    transform: scale(1.05);
-    transition: all 0.5s ease;
-
-}
-.result{
-    color: beige;
-    position: relative;
-    left:100px;
-}
-#weather-type{
-    
-   color:bisque;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
-  
+body {
+  background-color: #e0f2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
 
+.container {
+  background-color: cornflowerblue;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.heading {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  height: 3rem;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="button"] {
+  background-color: black;
+  color: white;
+  height: 3.2rem;
+  width: 100%;
+  max-width: 150px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input[type="button"]:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.result {
+  color: beige;
+}
+
+#weather-type {
+  color: bisque;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.weather-info h3 {
+  margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="button"] {
+    width: 100%;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+}
