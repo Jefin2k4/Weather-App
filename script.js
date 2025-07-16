@@ -38,4 +38,9 @@ const showWeatherData = (WeatherData) => {
   document.getElementById("min-temp").innerText = WeatherData.main.temp_min;
   document.getElementById("max-temp").innerText = WeatherData.main.temp_max;
 };
+document.getElementById("city-input").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        searchCity();
+    }
+});
 
